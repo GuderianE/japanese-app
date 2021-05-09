@@ -1,24 +1,18 @@
 footer {
   background-color: black;
   color: white;
-  height: 80vh;
-  @include breakpoint(medium) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-around;
-  }
+  height: 100vh;
+  @include flexy($just: center, $aligni: space-around,
+    $dir: column);
+  // @include breakpoint(medium) {
+  //   @include flexy($just: center, $aligni: space-around,
+  //   $dir: column);
+  // }
 
   .locations {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexy($just: center, $aligni: center, $dir: column);
     @include breakpoint(medium) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
+      @include flexy($just: space-around, $aligni: center, $dir: row);
     }
     a {
       color: white;
@@ -28,11 +22,9 @@ footer {
 
   .icons {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    @include flexy($just: center, $aligni: center);
+    margin-top: 10px;
+    margin-bottom: 10px;
     .icon {
       padding: 5px;
     }
@@ -42,9 +34,7 @@ footer {
   }
 
   .reserved {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexy($just: center, $aligni: center);
     bottom: auto;
   }
 }

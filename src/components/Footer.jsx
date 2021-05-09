@@ -27,9 +27,9 @@ export const Footer = () => {
       </div>
 
       <div className="icons">
-        <FaFacebook className="icon" />
-        <SiWhatsapp className="icon" />
-        <FiInstagram className="icon" />
+        <FaFacebook className="icon" size={40}/>
+        <SiWhatsapp className="icon" size={40}/>
+        <FiInstagram className="icon" size={40}/>
       </div>
       <div className="reserved">
         <p>

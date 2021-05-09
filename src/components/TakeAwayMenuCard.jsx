@@ -14,7 +14,12 @@ export const TakeAwayMenuCard = ({ item }) => {
           <div>
             <strong>{item.name}</strong>
           </div>
-          <div>€{item.price.price}</div>
+          <div>
+            <p>{item.description}</p>
+          </div>
+          <div>
+          <p>€{item.price.price}</p>
+          </div>
           <button onClick={() => dispatch(addItem(item))}>add to basket</button>
         </div>
       </div>

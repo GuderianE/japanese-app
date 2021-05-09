@@ -37,7 +37,7 @@ export const Home = () => {
       >
         <div className='content_wrap'>
           <h1>TAKE AWAY</h1>
-          <p>You can order food online and pick up at Restaurant</p>
+          <p>You can order food online and pick it up at the Restaurant</p>
           <Link to='/takeawaymenu'>
             <button>ORDER NOW</button>
           </Link>
@@ -106,7 +106,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <Link to='/menu'>
+        <Link to='/takeawaymenu'>
           <button>View Menu</button>
         </Link>
       </section>
@@ -131,16 +131,6 @@ export const Home = () => {
             </div>
           </div>
 
-          <div className='loaction_card'>
-            <div className='content_wrap'>
-              <h3>MEGEVE</h3>
-              <div>
-                <p>Heures d'ouverture : 12:00-14:30 / 17:30-21:30</p>
-                <p>Téléphone : +33 (0)4 50 90 50 19</p>
-                <p>Addresse : ROND POINT DE LA POSTE, 74120 MEGEVE </p>
-              </div>
-            </div>
-          </div>
           <div className='loaction_card'>
             <div className='content_wrap'>
               <h3>MEGEVE</h3>

@@ -2,7 +2,6 @@
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 50px;
-  line-height: 75px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -21,32 +20,26 @@
 }
 
 .takeawaymenu_container img {
-  height: 200px;
-  width: 250px;
+  width: 50%;
 }
 
 footer {
   background-color: black;
   color: white;
-  height: 80vh;
-}
-
-@media (min-width: 768px) {
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: space-around;
-        -ms-flex-align: space-around;
-            align-items: space-around;
-  }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
 }
 
 footer .locations {
@@ -98,8 +91,8 @@ footer .icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 footer .icons .icon {
@@ -430,6 +423,53 @@ footer .reserved {
           align-items: center;
 }
 
+.menu_card .content_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_card .content_wrap .image_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_card .content_wrap .content_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_card .content_wrap p {
+  padding: 1rem 0 1rem 0;
+}
+
 .menu_card .content_wrap button {
   background-color: #cd3e36;
   color: #fff;
@@ -437,7 +477,7 @@ footer .reserved {
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
-  line-height: 45px;
+  padding: 1rem;
   max-width: 300px;
   text-decoration: none;
   text-transform: uppercase;
@@ -770,6 +810,7 @@ a {
   padding-top: 25px;
   text-align: center;
   color: white;
+  text-shadow: 0.1rem 0.1rem #000;
 }
 
 .heroImage .heroContents h1 {
@@ -853,16 +894,19 @@ a {
 
 .take_away .content_wrap h1 {
   color: #fff;
+  text-shadow: 0.1rem 0.1rem #000;
   font-size: 3.5rem;
 }
 
 .take_away .content_wrap p {
   color: #fff;
+  text-shadow: 0.1rem 0.1rem #000;
   font-size: 2rem;
 }
 
 .take_away .content_wrap button {
   color: #fff;
+  text-shadow: 0.1rem 0.1rem #000;
   border-color: #fff;
   background: transparent;
   padding: 1rem;
@@ -963,21 +1007,17 @@ a {
 
 .location_img .content_wrap h1 {
   color: #fff;
+  text-shadow: 0.1rem 0.1rem #000;
   font-size: 3.4rem;
 }
 
 .location_card_container {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 20px;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .location_card_container .loaction_card {
@@ -1147,12 +1187,12 @@ a {
 }
 
 .main {
-  margin-top: 3.3rem;
+  margin-top: 4rem;
 }
 
 @media (min-width: 768px) {
   .main {
-    margin-top: 3.9rem;
+    margin-top: 3.7rem;
   }
 }
 /*# sourceMappingURL=Routes.css.map */
