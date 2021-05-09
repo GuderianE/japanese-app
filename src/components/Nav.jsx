@@ -101,9 +101,9 @@ export const Nav = () => {
                             {hamburgerLogic()}
                         </nav>
                     )}
-                <div className='logo'>
-                    {windowWidth >= breakpointM ? <img src={LogoBig} alt="Satzuki Logo" /> : <img src={Logo} alt="Satzuki Logo" />}
-                </div>
+                <NavLink className='logo' to='/'>
+                        {windowWidth >= breakpointM ? <img src={LogoBig} alt="Satzuki Logo" /> : <img src={Logo} alt="Satzuki Logo" />}
+                </NavLink>
                 <div className='basket-icon'>
                     <div className='nav-link'>
                         <NavLink to='/signin'>Sign In</NavLink>

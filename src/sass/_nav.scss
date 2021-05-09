@@ -8,7 +8,7 @@
     background-color: $secondary;
     padding: $global-padding;
     @include flexy($aligni: center);
-    
+
     @include breakpoint(medium) {
         position: relative;
         @include flexy($aligni: center);
@@ -70,6 +70,13 @@
                 margin: 0;
                 height: 2vh;
                 width: 4.5rem;
+
+                a {
+                    transition: 400ms;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
             }
 
             @include breakpoint(large) {
@@ -85,12 +92,14 @@
 
         img {
             width: 3rem;
+
             @include breakpoint(medium) {
                 left: 0;
                 z-index: 2;
                 width: 6rem;
             }
         }
+
         @include breakpoint(medium) {
             position: absolute;
             left: 2rem;
@@ -105,7 +114,8 @@
         height: 3rem;
         position: absolute;
         right: 1rem;
-        @include flexy( $just: flex-end, $aligni: center);
+        @include flexy($just: flex-end, $aligni: center);
+
         @include breakpoint(medium) {
             width: 9rem;
             position: static;
@@ -113,10 +123,17 @@
         }
 
         .nav-link {
+
             // width: 100%;
             @include breakpoint(medium) {
                 text-align: center;
                 // width: 6rem;
+                a {
+                    transition: 400ms;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
             }
 
             a {
