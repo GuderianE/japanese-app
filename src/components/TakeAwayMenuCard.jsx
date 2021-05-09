@@ -12,7 +12,7 @@ export const TakeAwayMenuCard = ({ item }) => {
         </div>
         <div className='content_container'>
           <div>
-            <strong>{item.name}</strong>
+            <h3>{item.name}</h3>
           </div>
           <div>
             <p>{item.description}</p>
