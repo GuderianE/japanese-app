@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import sushi from '../assets/sushi.jpg';
-import sushi2 from '../assets/sushi2.jpg';
-import sushi3 from '../assets/sushi3.jpg';
+import sushi2 from '../assets/take-away.jpg';
 import tempura from '../assets/tempura.jpg';
 import sukiyaki from '../assets/sukiyaki.jpg';
-import satsuki from '../assets/satsuki.jpg';
-import zashiki from '../assets/zashiki.jpg';
+import satsuki from '../assets/outside-restaurant.png';
+import zashiki from '../assets/inside-restaurant.png';
+import Logo from '../assets/mainpage-logo.png';
 import MasonryImageList from './MasonryImageList';
 
 export const Home = () => {
@@ -14,8 +14,8 @@ export const Home = () => {
     <article>
       <section class='heroImage' style={{ backgroundImage: `url(${zashiki})` }}>
         <div class='heroContents'>
-          <h1>SATSUKI</h1>
-          <p>Japanese Restaurant in Chamonix,serving Sushi and Japanese food</p>
+          <img src={Logo} alt="mainpage logo" />
+          <p>We serve authentic Japanese food</p>
         </div>
       </section>
       <section className='restaurant_info'>

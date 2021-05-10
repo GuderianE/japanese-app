@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { NavLink } from 'react-router-dom';
-import Logo from '../assets/Satsuki-Logo (2).png';
-import LogoBig from '../assets/Improved-Satzuki-Logo.png';
+import LogoBig from '../assets/Logo.png';
 
 export const Nav = () => {
     const [animateToggle, setAnimateToggle] = useState('initialClose');
@@ -102,7 +101,7 @@ export const Nav = () => {
                         </nav>
                     )}
                 <NavLink className='logo' to='/'>
-                        {windowWidth >= breakpointM ? <img src={LogoBig} alt="Satzuki Logo" /> : <img src={Logo} alt="Satzuki Logo" />}
+                        <img src={LogoBig} alt="Satzuki Logo" />
                 </NavLink>
                 <div className='basket-icon'>
                     <div className='nav-link'>
